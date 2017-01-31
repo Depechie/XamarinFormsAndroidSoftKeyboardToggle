@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:local="clr-namespace:AndroidEntryKeyboardTest"
+		xmlns:controls="clr-namespace:AndroidEntryKeyboardTest.Controls"
+		x:Class="AndroidEntryKeyboardTest.AndroidEntryKeyboardTestPage">
+
+	<StackLayout Margin="10"
+			VerticalOptions="StartAndExpand"
+			HorizontalOptions="FillAndExpand">
+		<controls:NoSoftKeyboardEntry x:Name="BarcodeEntry"
+			Placeholder="Enter barcode"
+			Unfocused="OnUnfocused" />
+		<controls:NoSoftKeyboardEntry x:Name="Barcode2Entry"
+			Placeholder="Enter barcode"
+			Unfocused="OnUnfocused" />		
+		<Button Text="keyboard" Clicked="OnShowKeyboardClicked" />
+	</StackLayout>
+</ContentPage>
